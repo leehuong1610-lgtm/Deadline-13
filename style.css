@@ -1399,3 +1399,9 @@ body {
         min-height: 540px;
     }
 }
+.social-links.hide-desktop {
+    display: none;
+}
+.rights-info.hide-desktop {
+    display: none;
+}
