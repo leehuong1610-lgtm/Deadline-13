@@ -1,4 +1,4 @@
-:root {
+    :root {
    
     --clr-white: #ffffff;
     --clr-primary-dark: #210933;
@@ -589,6 +589,10 @@ body {
 
     .image-visual-right {
         background: url(image/Mask\ Group.svg) center / cover no-repeat;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        background-repeat: no-repeat;
         max-width: 700px;
         width: 100%;
         min-height: 352px;
@@ -956,6 +960,7 @@ body {
 }
 
 @media only screen and (max-width: 1150px) {
+    
     .main-hero-area {
         height: 576px;
         transition: all 0.8s ease;
@@ -1014,10 +1019,10 @@ body {
         background-color: var(--clr-white);
         transition: all 0.8s ease;
     }
-   .social-links.hide-desktop {
+    .social-links.hide-desktop {
         display: none;
     }
-   .rights-info.hide-desktop {
+    .rights-info.hide-desktop {
         display: none;
     }
     .main-hero-area {
@@ -1036,6 +1041,7 @@ body {
     .client-logos-mobile {
         margin-top: 33px;
         display: flex;
+        opacity: 60%;
         justify-content: space-between;
         max-width: 100%;
 
@@ -1160,8 +1166,10 @@ body {
                 }
             }
             .image-visual-right {
-                max-width: 100%;
+                max-width: 550px;
+               
                 background-size: contain;
+                border-radius: 20px;
             }
         }
     }
